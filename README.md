@@ -2,7 +2,9 @@
 
 ## Contributors
 
-Paul Pu Liang (), Carnegie Mellon University
+Correspondence to: 
+  - Paul Liang (pliang@cs.cmu.edu)
+  - Chiyu Wu (chiyuwu23@gmail.com)
 
 ## Motivation
 
