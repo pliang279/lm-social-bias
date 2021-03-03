@@ -1,4 +1,4 @@
-# Towards Understanding and Mitigating Social Biases in Language Models
+# Measuring and Mitigating Social Biases in Language Models
 
 ## Contributors
 
