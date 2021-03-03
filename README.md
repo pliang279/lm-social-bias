@@ -3,7 +3,7 @@
 ## Contributors
 
 Correspondence to: 
-  - Paul Liang (pliang@cs.cmu.edu)
+  - [Paul Pu Liang](http://www.cs.cmu.edu/~pliang/) (pliang@cs.cmu.edu)
   - Chiyu Wu (chiyuwu23@gmail.com)
 
 ## Motivation
