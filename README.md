@@ -30,8 +30,14 @@ which cover both spoken and written English language across formal and informal 
 
 ### LM performance
 
-To accurately benchmark LMs for both fairness and performance, we use two sets of metrics to accurately estimate bias association while allowing for context association. To estimate for bias association, we measure whether $p_\theta(w_{t}|c_{t-1}^{(1)}) \approx p_\theta(w_{t}|c_{t-1}^{(2)})$ across the entire distribution of next tokens at time $t$ (i.e., local bias) as well as whether $g (s^{(1)}) \approx g (s^{(2)})$ for entire generated sentences (i.e., global bias). To estimate for context association, we measure whether $p_\theta(w^*|c_{t-1}^{(1)})$ and  $p_\theta(w^*|c_{t-1}^{(2)})$ for the ground truth word $w^*$ are both \textit{high} implying that the LM still assigns high probability to the correct next token by capturing context associations.
+To accurately benchmark LMs for both fairness and performance, we use two sets of metrics to accurately estimate bias association while allowing for context association.
+
+To estimate for bias association, we measure whether across the entire distribution of next tokens at time t are the same regardless of context (local bias) and whether the regard for the entire generated sentence is the same regardless of context (global bias). 
+
+To estimate for context association, we measure whether the probabilities assigned for the ground truth word are both high regardless of context implying that the LM still assigns high probability to the correct next token by capturing context associations.
 
 [1] May et al., On measuring social biases in sentence encoders. NAACL 2019
+
 [2] Nadeem et al., Stereoset: Measuring stereotypical bias in pretrained language models. 2020
+
 [3] Sheng et al., The woman worked as a babysitter: On biases in language generation. EMNLP 2019
