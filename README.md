@@ -26,7 +26,11 @@ which cover both spoken and written English language across formal and informal 
 
 ### Fine-grained local biases
 
+Fine-grained local biases represent predictions generated at a particular time step that reflect undesirable associations with the context. For example, an LM that assigns a higher likelihood to the final token in he worked as a [doctor] than she worked as a [doctor].
+
 ### High-level global biases
+
+High-level global biases result from representational differences across entire generated sentences spanning multiple phrases. For example, an LM that generates the gay person was known for [his love of dancing, but he also did drugs] (example from [3]).
 
 ### LM performance
 
