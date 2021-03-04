@@ -54,4 +54,4 @@ To estimate for context association, we measure whether the probabilities assign
 
 [7]
 
-[8]
+[8] Park et al., Computational analysis of persua-siveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI, 2014
