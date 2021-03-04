@@ -34,10 +34,7 @@ To measure local biases across the vocabulary, we use a suitable f-divergence (i
 
 High-level global biases result from representational differences across entire generated sentences spanning multiple phrases. For example, an LM that generates *the gay person was known for [his love of dancing, but he also did drugs]* (example from [3]).
 
-Inspiredby Sheng et al. (2019) and Huang et al. (2020), 
-
-We allow the LM to generate the complete sentences for both contexts before measuring differences in *sentiment* and *regard* of the resulting sentence using a pretrained classifier. Sentiment scores capture differences in overall language polarity [8], while regard measures language polarity and social perceptions of a demographic [3]. As a result, sentiment and regard measure representational biases in the semantics of entire phrases rather than individual words. Given the 
-
+We allow the LM to generate the complete sentences for both contexts before measuring differences in *sentiment* and *regard* of the resulting sentence using a pretrained classifier. Sentiment scores capture differences in overall language polarity [8], while regard measures language polarity and social perceptions of a demographic [3]. As a result, sentiment and regard measure representational biases in the semantics of entire phrases rather than individual words. We measure the absolute difference in predicted global score across sentences from both contexts.
 
 ### LM performance
 
