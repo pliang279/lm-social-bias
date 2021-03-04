@@ -40,6 +40,8 @@ To estimate for bias association, we measure whether across the entire distribut
 
 To estimate for context association, we measure whether the probabilities assigned for the ground truth word are both high regardless of context implying that the LM still assigns high probability to the correct next token by capturing context associations.
 
+## References
+
 [1] May et al., On measuring social biases in sentence encoders. NAACL 2019
 
 [2] Nadeem et al., Stereoset: Measuring stereotypical bias in pretrained language models. 2020
