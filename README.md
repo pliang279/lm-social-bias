@@ -58,6 +58,6 @@ To estimate for context association, we measure whether the probabilities assign
 
 [6] Poria et al., MELD: A multimodal multi-party dataset for emotion recognition in conversations. ACL 2019
 
-[7] Park et al., Computational analysis of persuasiveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI, 2014
+[7] Park et al., Computational analysis of persuasiveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI 2014
 
 [8] Pang and Lee. Opinion mining and sentiment analysis. Foundations and Trends in Information Retrieval 2008
