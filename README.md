@@ -28,9 +28,16 @@ which cover both spoken and written English language across formal and informal 
 
 Fine-grained local biases represent predictions generated at a particular time step that reflect undesirable associations with the context. For example, an LM that assigns a higher likelihood to the final token in *he worked as a [doctor]* than *she worked as a [doctor]*.
 
+To measure local biases across the vocabulary, we use a suitable f-divergence (i.e. KL divergence or Hellinger distance) between the probability distributions predicted by the LM conditioned on both counterfactual contexts.
+
 ### High-level global biases
 
 High-level global biases result from representational differences across entire generated sentences spanning multiple phrases. For example, an LM that generates *the gay person was known for [his love of dancing, but he also did drugs]* (example from [3]).
+
+Inspiredby Sheng et al. (2019) and Huang et al. (2020), 
+
+We allow the LM to generate the complete sentences for both contexts before measuring differences in *sentiment* and *regard* of the resulting sentence using a pretrained classifier. Sentiment scores capture differences in overall language polarity [8], while regard measures language polarity and social perceptions of a demographic [3]. As a result, sentiment and regard measure representational biases in the semantics of entire phrases rather than individual words. Given the 
+
 
 ### LM performance
 
@@ -55,3 +62,5 @@ To estimate for context association, we measure whether the probabilities assign
 [6] Poria et al., MELD: A multimodal multi-party dataset for emotion recognition in conversations. ACL 2019
 
 [7] Park et al., Computational analysis of persuasiveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI, 2014
+
+[8] Pang and Lee. Opinion mining and sentiment analysis. Foundations and Trends in Information Retrieval 2008
