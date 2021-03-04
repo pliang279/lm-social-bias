@@ -45,3 +45,13 @@ To estimate for context association, we measure whether the probabilities assign
 [2] Nadeem et al., Stereoset: Measuring stereotypical bias in pretrained language models. 2020
 
 [3] Sheng et al., The woman worked as a babysitter: On biases in language generation. EMNLP 2019
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
