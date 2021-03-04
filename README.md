@@ -46,7 +46,7 @@ To estimate for context association, we measure whether the probabilities assign
 
 [3] Sheng et al., The woman worked as a babysitter: On biases in language generation. EMNLP 2019
 
-[4]
+[4]  Merity et al., Pointer sentinel mixture models. ICLR 2017
 
 [5]
 
