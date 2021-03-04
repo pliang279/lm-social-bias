@@ -16,9 +16,9 @@ To accurately benchmark LMs for both bias and context associations, it is also i
 
 1. WikiText-2 [4]
 2. SST [5]
-3. Reddit [6]
-4. MELD [7]
-5. POM [8]
+3. Reddit
+4. MELD [6]
+5. POM [7]
 
 which cover both spoken and written English language across formal and informal settings and a variety of topics (Wikipedia, reviews, politics, news, and TV dialog).
 
@@ -46,12 +46,10 @@ To estimate for context association, we measure whether the probabilities assign
 
 [3] Sheng et al., The woman worked as a babysitter: On biases in language generation. EMNLP 2019
 
-[4]  Merity et al., Pointer sentinel mixture models. ICLR 2017
+[4] Merity et al., Pointer sentinel mixture models. ICLR 2017
 
-[5]
+[5] Socher et al., Recursive deep models for semantic compositionality over a sentiment treebank. EMNLP 2013
 
-[6]
+[6] Poria et al., MELD: A multimodal multi-party dataset for emotion recognition in conversations. ACL 2019
 
-[7] Poria et al., MELD: A multimodal multi-party dataset for emotion recognition in conversations. ACL 2019
-
-[8] Park et al., Computational analysis of persuasiveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI, 2014
+[7] Park et al., Computational analysis of persuasiveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI, 2014
