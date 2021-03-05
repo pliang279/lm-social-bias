@@ -56,7 +56,7 @@ To estimate for context association, we measure whether the probabilities assign
 
 ## Behavior of existing language models
 
-We have benchmarked the pretrained GPT-2 language model [
+We have benchmarked the pretrained GPT-2 language model [18]
 
 Did you run existing language models on this task, and do the results of those experiments
 motivate how we should interpret performance on the task? Many tasks will be too difficult
@@ -107,3 +107,5 @@ We outline the following limitations with this task and avenues for future work:
 [16] Park et al., Computational analysis of persuasiveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI 2014
 
 [17] Pang and Lee. Opinion mining and sentiment analysis. Foundations and Trends in Information Retrieval 2008
+
+[18] Radford et al., Language models are unsupervised multi-task learners. 2019
