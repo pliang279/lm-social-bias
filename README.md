@@ -16,6 +16,10 @@ As machine learning methods are deployed in real-world settings such as healthca
 
 ## Related work
 
+Recent work has focused on defining and evaluating social bias [1,2] as well as other notions of human-aligned values such as ethics [3], 
+
+~\cite{hendrycks2020aligning}, social bias implications~\cite{sap2020social}, and toxic speech~\cite{gehman2020realtoxicityprompts} in generated text. Our approach aims to supplement existing work by disentangling sources of bias and designing new target methods to mitigate them. We also evaluate our method on the benchmarks proposed in~\citet{nadeem2020stereoset} and~\citet{sheng2019woman}. Existing approaches towards mitigating biases in generation currently require retraining the models through adversarial trigger prompts~\cite{sheng2020towards}, data augmentation or collection~\cite{dinan2019queens}, and different objective functions~\cite{qian2019reducing,huang2020reducing}. However, these approaches are not scalable to large pretrained LMs~\cite{radford2019language} which are trained on massive amounts of text data over hundreds of machines for several weeks. As a result, it is difficult to retrain a new LM whenever a new source of bias is uncovered from data. Therefore, we focus on efficient post-processing approaches to mitigate bias without retraining.
+
 What other work motivates this task, or addresses similar questions?
 
 ## Behavior of existing language models on task
@@ -48,7 +52,7 @@ To measure local biases across the vocabulary, we use a suitable f-divergence (i
 
 ### High-level global biases
 
-High-level global biases result from representational differences across entire generated sentences spanning multiple phrases. For example, an LM that generates *the gay person was known for [his love of dancing, but he also did drugs]* (example from [3]).
+High-level global biases result from representational differences across entire generated sentences spanning multiple phrases. For example, an LM that generates *the gay person was known for [his love of dancing, but he also did drugs]* (example from [1]).
 
 We allow the LM to generate the complete sentences for both contexts before measuring differences in *sentiment* and *regard* of the resulting sentence using a pretrained classifier. Sentiment scores capture differences in overall language polarity [8], while regard measures language polarity and social perceptions of a demographic [3]. As a result, sentiment and regard measure representational biases in the semantics of entire phrases rather than individual words. We measure the absolute difference in predicted global score across sentences from both contexts.
 
@@ -71,11 +75,11 @@ We outline the following limitations with this task:
 
 ## References
 
-[1] May et al., On measuring social biases in sentence encoders. NAACL 2019
+[1] Sheng et al., The woman worked as a babysitter: On biases in language generation. EMNLP 2019
 
 [2] Nadeem et al., Stereoset: Measuring stereotypical bias in pretrained language models. 2020
 
-[3] Sheng et al., The woman worked as a babysitter: On biases in language generation. EMNLP 2019
+[3] May et al., On measuring social biases in sentence encoders. NAACL 2019
 
 [4] Merity et al., Pointer sentinel mixture models. ICLR 2017
 
