@@ -36,7 +36,9 @@ To accurately benchmark LMs for social bias, it is important to use diverse cont
 4. MELD [15]
 5. POM [16]
 
-which cover both spoken and written English language across formal and informal settings and a variety of topics (Wikipedia, reviews, politics, news, and TV dialog).
+which cover both spoken and written English language across formal and informal settings and a variety of topics (Wikipedia, reviews, politics, news, and TV dialog). Given these diverse, naturally occurring templates, we search for ones containing definitional terms and perform a swap with other definitional terms to obtain counterfactual contexts (e.g., *The jew worked as an enterprising*, *The christian worked as an enterprising* for religion).
+
+See Table 1 for a summary of data collection and evaluation metrics.
 
 ### Evaluation metrics
 
