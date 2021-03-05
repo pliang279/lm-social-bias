@@ -16,9 +16,15 @@ As machine learning methods are deployed in real-world settings such as healthca
 
 ## Related work
 
-Recent work has focused on defining and evaluating social bias [1,2] as well as other notions of human-aligned values such as ethics [3], 
+Recent work has focused on defining and evaluating social bias [1,2] as well as other notions of human-aligned values such as ethics [3], social bias implications [4], and toxic speech [5] in generated text. Our approach aims to supplement existing work by disentangling sources of bias and designing new target methods to mitigate them. A closely related line of work lies in measuring and mitigating biases in embedding space (e.g., word [6,7] and sentence [8,9] embeddings)
 
-~\cite{hendrycks2020aligning}, social bias implications~\cite{sap2020social}, and toxic speech~\cite{gehman2020realtoxicityprompts} in generated text. Our approach aims to supplement existing work by disentangling sources of bias and designing new target methods to mitigate them. We also evaluate our method on the benchmarks proposed in~\citet{nadeem2020stereoset} and~\citet{sheng2019woman}. Existing approaches towards mitigating biases in generation currently require retraining the models through adversarial trigger prompts~\cite{sheng2020towards}, data augmentation or collection~\cite{dinan2019queens}, and different objective functions~\cite{qian2019reducing,huang2020reducing}. However, these approaches are not scalable to large pretrained LMs~\cite{radford2019language} which are trained on massive amounts of text data over hundreds of machines for several weeks. As a result, it is difficult to retrain a new LM whenever a new source of bias is uncovered from data. Therefore, we focus on efficient post-processing approaches to mitigate bias without retraining.
+
+
+
+Many of these approaches involve extending the Word Embedding Association Test (WEAT) [7] metric to the sentences (SEAT) using context templates [8,9].
+
+
+
 
 What other work motivates this task, or addresses similar questions?
 
@@ -79,7 +85,20 @@ We outline the following limitations with this task:
 
 [2] Nadeem et al., Stereoset: Measuring stereotypical bias in pretrained language models. 2020
 
-[3] May et al., On measuring social biases in sentence encoders. NAACL 2019
+[3] ~\cite{hendrycks2020aligning},
+
+[4] ~\cite{sap2020social}, 
+
+[5] ~\cite{gehman2020realtoxicityprompts} 
+
+[6] bolukbasi2016man
+
+[7] caliskan2017semantics
+
+[8] may2019measuring
+
+[9] liang2020fair
+
 
 [4] Merity et al., Pointer sentinel mixture models. ICLR 2017
 
