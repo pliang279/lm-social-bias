@@ -66,12 +66,11 @@ the task could be modified to make its difficulty more graded)
 
 ## Limitations
 
-We outline the following limitations with this task:
+We outline the following limitations with this task and avenues for future work:
 
-1. The metrics
-2. efsaf
-3. fasfs
-4. fasf
+1. Our metrics are not perfect and even strong performance on these metrics should not be taken as a guarantee for the real-world safety of pretrained LMs. Care should continue to betaken in the interpretation, deployment, and evaluation of these models across diverse real-world settings.
+2. Our approach depends on carefully crafted bias definitions (well-defined bias subspace & classifier) which largely reflect one perception of biases and might not generalize toother cultures, geographical regions, and time periods.
+3. Ultimately, these metrics are only a proxy for human evaluation studies which should be conducted on top of these automatic evaluation metrics.
 
 ## References
 
