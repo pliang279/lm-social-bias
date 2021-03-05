@@ -62,15 +62,15 @@ Local bias, KL divergence metric:
 
 | | Simple contexts  | Diverse contexts |
 | :---:   | :-: | :-: |
-| Gender bias | 0.161 | 0.147 |
-| Religion bias | 0.213 | 0.053 |
+| Gender bias | ? | ? |
+| Religion bias | ? | ? |
 
 Local bias, Hellinger distance metric:
 
 | | Simple contexts  | Diverse contexts |
 | :---:   | :-: | :-: |
-| Gender bias | ? | ? |
-| Religion bias | ? | ? |
+| Gender bias | 0.161 | 0.147 |
+| Religion bias | 0.213 | 0.053 |
 
 Global bias, regard score metric:
 
