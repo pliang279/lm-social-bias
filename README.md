@@ -6,9 +6,32 @@ Correspondence to:
   - [Paul Pu Liang](http://www.cs.cmu.edu/~pliang/) (pliang@cs.cmu.edu)
   - Chiyu Wu (chiyuwu23@gmail.com)
 
+## Summary
+
+
+What underlying capability or limitation of language models is the task
+intended to quantify?
+
 ## Motivation
 
 As machine learning methods are deployed in real-world settings such as healthcare, legal systems, and social science, it is crucial to recognize how they shape social biases and stereotypes in these sensitive decision-making processes. Among such real-world deployments are large-scale pretrained language models (LMs) that can be potentially dangerous in manifesting undesirable representational biases - harmful biases resulting from stereotyping that propagate negative generalizations involving gender, race, religion, and other social constructs. As a step towards improving the fairness of LMs, we carefully define several sources of representational biases before proposing new benchmarks and metrics to measure them. This repository contains a set of tools to benchmark social biases in LMs.
+
+## Related work
+
+What other work motivates this task, or addresses similar questions?
+
+## Behavior of existing language models on task
+
+Did you run existing language models on this task, and do the results of those experiments
+motivate how we should interpret performance on the task? Many tasks will be too difficult
+for existing publicly available language models, and it is OK if existing models simply fail
+at the task. (if existing models completely fail at the task though, you should consider whether
+the task could be modified to make its difficulty more graded)
+
+## Design considerations
+
+What technical or scientific considerations motivated the specific design choices you made when
+creating the task?
 
 ## Datasets
 
@@ -43,6 +66,12 @@ To accurately benchmark LMs for both fairness and performance, we use two sets o
 To estimate for bias association, we measure whether across the entire distribution of next tokens at time t are the same regardless of context (local bias) and whether the regard for the entire generated sentence is the same regardless of context (global bias). 
 
 To estimate for context association, we measure whether the probabilities assigned for the ground truth word are both high regardless of context implying that the LM still assigns high probability to the correct next token by capturing context associations.
+
+## Limitations
+
+How might the score on your task be misleading, or fail to get at the underlying capability or 
+limitation you are targeting? What related measurements are beyond the scope of your current task, 
+but a promising area for future work?
 
 ## References
 
