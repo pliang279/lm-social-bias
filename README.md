@@ -77,15 +77,15 @@ We outline the following limitations with this task:
 
 [3] ~\cite{hendrycks2020aligning},
 
-[4] ~\cite{sap2020social}, 
+[4] Sap et al., Social bias frames: Reasoning aboutsocial and power implications of language. ACL 2020
 
 [5] ~\cite{gehman2020realtoxicityprompts} 
 
-[6] bolukbasi2016man
+[6] Bolukbasi et al., Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. NeurIPS 2016
 
-[7] caliskan2017semantics
+[7] Caliskan et al., Semantics derived automatically from language corpora contain human-like biases. Science 2017
 
-[8] may2019measuring
+[8] May et al., On measuring social biases in sentence encoders. NAACL 2019
 
 [9] Liang et al., Towards debiasing sentence representations. ACL 2020
 
