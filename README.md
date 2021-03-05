@@ -16,7 +16,9 @@ As machine learning methods are deployed in real-world settings such as healthca
 
 ## Related work
 
-Recent work has focused on defining and evaluating social bias [1,2] as well as other notions of human-aligned values such as ethics [3], social bias implications [4], and toxic speech [5] in generated text. Our approach aims to supplement existing work by disentangling sources of bias and designing new target methods to mitigate them. A closely related line of work lies in measuring and mitigating biases in embedding space (e.g., word [6,7] and sentence [8,9] embeddings). Many of these approaches involve extending the Word Embedding Association Test (WEAT) [7] metric to the sentences (SEAT) using context templates [8,9]. Finally, several other sources of bias have also been shown to exist in machine learning models, such as allocational harms that arise when an automated system allocates resources (e.g., credit) or opportunities (e.g., jobs) unfairly to different social groups [10], and questionable correlations between system behavior and features associated with particular social groups [11]. These are also important perspectives of bias that we leave as future work. We defer the reader to [12] for a detailed taxonomy of the existing literature in analyzing social biases in NLP.
+Recent work has focused on defining and evaluating social bias [1,2] as well as other notions of human-aligned values such as ethics [3], social bias implications [4], and toxic speech [5] in generated text. Our approach aims to supplement existing work by disentangling sources of bias and designing new target methods to mitigate them, especially on real-world diverse contexts which are an untested arena via current metrics.
+
+A parallel line of work lies in measuring and mitigating biases in embedding spaces (e.g., word [6,7] and sentence [8,9] embeddings). Many of these approaches involve extending the Word Embedding Association Test (WEAT) [7] metric to the sentences (SEAT) using context templates [8,9]. In addition, several other sources of bias have also been shown to exist in machine learning models, such as allocational harms that arise when an automated system allocates resources (e.g., credit) or opportunities (e.g., jobs) unfairly to different social groups [10], and questionable correlations between system behavior and features associated with particular social groups [11]. We defer the reader to [12] for a detailed taxonomy of the existing literature in analyzing social biases in NLP.
 
 ## Behavior of existing language models on task
 
@@ -93,7 +95,7 @@ We outline the following limitations with this task:
 
 [11] Cho et al., On measuring gender bias in translation of gender-neutral pronouns. First Workshop on Gender Bias in Natural Language Processing 2019
 
-[12] Blodgett et al., Language (technology) is power: A critical survey of “bias” in nlp. ACL 2020
+[12] Blodgett et al., Language (technology) is power: A critical survey of “bias” in NLP. ACL 2020
 
 [13] Merity et al., Pointer sentinel mixture models. ICLR 2017
 
