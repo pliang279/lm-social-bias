@@ -24,7 +24,7 @@ A parallel line of work lies in measuring and mitigating biases in embedding spa
 
 Representational biases are measured by differences in outcomes across social groups (e.g., gender, race, or religion). Usually, a set of defintional terms are chosen to represent each social group (e.g., *he*, *she*, *mother*, *father* in the case of gender). To extend these word-level terms to phrase-level contexts, a process of obtaining these defintional terms in naturally occurring phrases is required.
 
-![Alt text](images/evaluation_table.jpg?raw=true "Title")
+![Alt text](evaluation_table.png?raw=true "Title")
 
 ### Obtaining simple and diverse contexts
 
