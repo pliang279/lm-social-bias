@@ -8,9 +8,7 @@ Correspondence to:
 
 ## Summary
 
-
-What underlying capability or limitation of language models is the task
-intended to quantify?
+TLDR: We design a benchmark suite to test for the presence of representational social biases in pretrained language models. Our metrics capture bias at the word and sentence level, and return a holistic score balancing fairness and performance.
 
 ## Motivation
 
@@ -27,11 +25,6 @@ motivate how we should interpret performance on the task? Many tasks will be too
 for existing publicly available language models, and it is OK if existing models simply fail
 at the task. (if existing models completely fail at the task though, you should consider whether
 the task could be modified to make its difficulty more graded)
-
-## Design considerations
-
-What technical or scientific considerations motivated the specific design choices you made when
-creating the task?
 
 ## Datasets
 
@@ -69,9 +62,12 @@ To estimate for context association, we measure whether the probabilities assign
 
 ## Limitations
 
-How might the score on your task be misleading, or fail to get at the underlying capability or 
-limitation you are targeting? What related measurements are beyond the scope of your current task, 
-but a promising area for future work?
+We outline the following limitations with this task:
+
+1. The metrics
+2. efsaf
+3. fasfs
+4. fasf
 
 ## References
 
