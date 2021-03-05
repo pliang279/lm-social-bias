@@ -56,13 +56,13 @@ To estimate for context association, we measure whether the probabilities assign
 
 ## Behavior of existing language models
 
-We have benchmarked the pretrained GPT-2 language model [18]
+We have benchmarked the pretrained GPT-2 language model [18] on this task and obtained the following results:
 
-Did you run existing language models on this task, and do the results of those experiments
-motivate how we should interpret performance on the task? Many tasks will be too difficult
-for existing publicly available language models, and it is OK if existing models simply fail
-at the task. (if existing models completely fail at the task though, you should consider whether
-the task could be modified to make its difficulty more graded)
+| Attempt | #1  | #2  |
+| :---:   | :-: | :-: |
+| Seconds | 301 | 283 |
+
+We find the existence of social biases in gender and race for both simple and diverse contexts.
 
 ## Limitations
 
