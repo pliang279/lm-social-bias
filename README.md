@@ -58,9 +58,10 @@ To estimate for context association, we measure whether the probabilities assign
 
 We have benchmarked the pretrained GPT-2 language model [18] on this task and obtained the following results:
 
-| Attempt | #1  | #2  |
+| | Simple contexts  | Diverse contexts |
 | :---:   | :-: | :-: |
-| Seconds | 301 | 283 |
+| Gender bias | 0.161 | 0.147 |
+| Religion bias | 0.213 | 0.053 |
 
 We find the existence of social biases in gender and race for both simple and diverse contexts.
 
