@@ -1,4 +1,4 @@
-# Measuring Social Biases in Language Models
+# Diverse Metrics for Social Biases in Language Models
 
 ## Contributors
 
