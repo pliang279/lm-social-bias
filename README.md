@@ -87,13 +87,13 @@ We outline the following limitations with this task:
 
 [8] may2019measuring
 
-[9] liang2020fair
+[9] Liang et al., Towards debiasing sentence representations. ACL 2020
 
-[10] ~\cite{barocas2017problem}
+[10] Barocas and Selbst. Big data’s disparate impact. California Law Review 2016
 
-[11] ~\cite{cho2019measuring}
+[11] Cho et al., On measuring gender bias in translation of gender-neutral pronouns. First Workshop on Gender Bias in Natural Language Processing 2019
 
-[12] ~\citet{blodgett2020language}
+[12] Blodgett et al., Language (technology) is power: A critical survey of “bias” in nlp. ACL 2020
 
 [4] Merity et al., Pointer sentinel mixture models. ICLR 2017
 
