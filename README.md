@@ -30,11 +30,11 @@ the task could be modified to make its difficulty more graded)
 
 To accurately benchmark LMs for both bias and context associations, it is also important to use diverse contexts beyond simple templates used in prior work [1,2,3]. Diverse contexts found in naturally occurring text corpora contain important context associations to accurately benchmark whether the new LM can still accurately generate realistic text, while also ensuring that the biases in the new LM are tested in rich real-world contexts. To achieve this, we collect a large set of 30,000 diverse contexts from 5 real-world text corpora spanning:
 
-1. WikiText-2 [4]
-2. SST [5]
+1. WikiText-2 [13]
+2. SST [14]
 3. Reddit
-4. MELD [6]
-5. POM [7]
+4. MELD [15]
+5. POM [16]
 
 which cover both spoken and written English language across formal and informal settings and a variety of topics (Wikipedia, reviews, politics, news, and TV dialog).
 
@@ -50,7 +50,7 @@ To measure local biases across the vocabulary, we use a suitable f-divergence (i
 
 High-level global biases result from representational differences across entire generated sentences spanning multiple phrases. For example, an LM that generates *the gay person was known for [his love of dancing, but he also did drugs]* (example from [1]).
 
-We allow the LM to generate the complete sentences for both contexts before measuring differences in *sentiment* and *regard* of the resulting sentence using a pretrained classifier. Sentiment scores capture differences in overall language polarity [8], while regard measures language polarity and social perceptions of a demographic [3]. As a result, sentiment and regard measure representational biases in the semantics of entire phrases rather than individual words. We measure the absolute difference in predicted global score across sentences from both contexts.
+We allow the LM to generate the complete sentences for both contexts before measuring differences in *sentiment* and *regard* of the resulting sentence using a pretrained classifier. Sentiment scores capture differences in overall language polarity [17], while regard measures language polarity and social perceptions of a demographic [1]. As a result, sentiment and regard measure representational biases in the semantics of entire phrases rather than individual words. We measure the absolute difference in predicted global score across sentences from both contexts.
 
 ### LM performance
 
@@ -73,13 +73,13 @@ We outline the following limitations with this task:
 
 [1] Sheng et al., The woman worked as a babysitter: On biases in language generation. EMNLP 2019
 
-[2] Nadeem et al., Stereoset: Measuring stereotypical bias in pretrained language models. 2020
+[2] Nadeem et al., Stereoset: Measuring stereotypical bias in pretrained language models. arXiv 2020
 
-[3] ~\cite{hendrycks2020aligning},
+[3] Hendrycks et al., Aligning AI with shared human values. arXiv 2020
 
 [4] Sap et al., Social bias frames: Reasoning aboutsocial and power implications of language. ACL 2020
 
-[5] ~\cite{gehman2020realtoxicityprompts} 
+[5] Gehman et al., Real toxicity prompts: Evaluating neural toxic degeneration in language models. EMNLP Findings 2020
 
 [6] Bolukbasi et al., Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. NeurIPS 2016
 
@@ -95,12 +95,12 @@ We outline the following limitations with this task:
 
 [12] Blodgett et al., Language (technology) is power: A critical survey of “bias” in nlp. ACL 2020
 
-[4] Merity et al., Pointer sentinel mixture models. ICLR 2017
+[13] Merity et al., Pointer sentinel mixture models. ICLR 2017
 
-[5] Socher et al., Recursive deep models for semantic compositionality over a sentiment treebank. EMNLP 2013
+[14] Socher et al., Recursive deep models for semantic compositionality over a sentiment treebank. EMNLP 2013
 
-[6] Poria et al., MELD: A multimodal multi-party dataset for emotion recognition in conversations. ACL 2019
+[15] Poria et al., MELD: A multimodal multi-party dataset for emotion recognition in conversations. ACL 2019
 
-[7] Park et al., Computational analysis of persuasiveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI 2014
+[16] Park et al., Computational analysis of persuasiveness in social multimedia: A novel dataset and multimodalprediction approach. ICMI 2014
 
-[8] Pang and Lee. Opinion mining and sentiment analysis. Foundations and Trends in Information Retrieval 2008
+[17] Pang and Lee. Opinion mining and sentiment analysis. Foundations and Trends in Information Retrieval 2008
