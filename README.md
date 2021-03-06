@@ -56,30 +56,30 @@ To estimate for context association, we measure whether the probabilities assign
 
 ## Behavior of existing language models
 
-We have benchmarked the pretrained GPT-2 language model [18] on this task and obtained the following results:
+We have benchmarked the pretrained GPT-2 language model [18] on this task and obtained the following results.
 
-Local bias, KL divergence metric:
+Local bias, KL divergence metric (lower is better):
 
 | | Simple contexts  | Diverse contexts |
 | :---:   | :-: | :-: |
 | Gender bias | ? | ? |
 | Religion bias | ? | ? |
 
-Local bias, Hellinger distance metric:
+Local bias, Hellinger distance metric (lower is better):
 
 | | Simple contexts  | Diverse contexts |
 | :---:   | :-: | :-: |
 | Gender bias | 0.161 | 0.147 |
 | Religion bias | 0.213 | 0.053 |
 
-Global bias, regard score metric:
+Global bias, regard score metric (lower is better):
 
 | | Simple contexts  | Diverse contexts |
 | :---:   | :-: | :-: |
 | Gender bias | ? | ? |
 | Religion bias | ? | ? |
 
-We find the existence of social biases in gender and race for both simple and diverse contexts.
+We find the existence of social biases in gender and race for both simple and diverse contexts. Note that although the bias metric for diverse contexts are lower, our preliminary results in *mitigating* bias in language models shows that it is more difficult to mitigate bias in text generated from diverse contexts.
 
 ## Limitations
 
